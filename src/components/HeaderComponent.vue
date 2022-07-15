@@ -1,8 +1,5 @@
 <template>
   <header>
-      <!-- top header  -->
-   
-        <!-- bottom header   -->
         <div class="ms_container">
             <div class="top_header d-flex justify-content-between">
                 <div class="logo">
@@ -11,25 +8,25 @@
                 <nav>
                     <ul class="d-flex">
                         <li>
-                            ciao
+                            element
                         </li>
                         <li>
-                            ciao
+                            element
                         </li>
                         <li>
-                              ciao
+                              element
                         </li>
                         <li>
-                              ciao
+                              element
                         </li>
                         <li>
-                            ciao>
+                            element
                         </li>
                         <li>
-                              ciao
+                              element
                         </li>
                           <li>
-                              ciao
+                              element
                         </li>
                     </ul>
                 </nav>
@@ -40,7 +37,7 @@
                   <h2>SEM Campaign made simple With Avada</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sunt vero! Delectus est aspernatur magnam illum! </p>
                   <div class="buttons">
-                    <span>ciao sono un btn</span>
+                    <span>element sono un btn</span>
                     <span>bella pevvoi</span>
                   </div>
                 </div>
@@ -66,12 +63,12 @@ header{
       background-size: cover;
       background-repeat: no-repeat;
       background-position-x: 50%;
-       background-position-y: 0%;
-       min-width: 800px;
+      background-position-y: 0%;
+      min-width: 800px;
        color: white;
 
   .top_header{
-    padding: 20px 0;
+    padding-top: 40px;
 
        .logo{
 
@@ -95,7 +92,7 @@ header{
 
 .ms_jumbotron{
 
-  padding: 160px 0;
+  padding: 210px 0;
 
   p{
     padding-right: 1.5rem;
