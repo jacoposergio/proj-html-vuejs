@@ -1,0 +1,35 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import '~@fontsource/source-sans-pro/index.css';
+
+@import './vars';
+
+
+
+// RESET
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+img {
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: $main-font
+}
+
+// COMMONS
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+}
