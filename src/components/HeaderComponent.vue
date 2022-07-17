@@ -96,6 +96,7 @@ header{
 
   p{
     padding-right: 1.5rem;
+    text-align: start;
   }
 
 }
