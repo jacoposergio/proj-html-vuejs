@@ -106,6 +106,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ @import '../assets/scss/vars.scss';
 
 .ms_container{
     width: 40%;
@@ -122,7 +123,8 @@ export default {
     }
 
        .footer_links{
-        margin-bottom: 50px ;      
+        margin-bottom: 50px ;  
+        color: $subtext-color;    
 
      }
 
@@ -131,9 +133,11 @@ export default {
 
        li{
         margin-right: 1rem;
+         color: $subtext-color; 
 
         span{
           font-weight: 600;
+           color: $text-first
         }
        }
 
@@ -146,6 +150,7 @@ export default {
 
       .social_links{
         margin-bottom: 40px;
+        color: $subtext-color;
         
           
           li{

@@ -8,37 +8,10 @@
         <div class="cards_container">
           <div class="row g-4 row-cols-4">
 
-                <div class="col">
+                <div class="col" v-for="cardItem, index in cardItems" :key="index">
                   <div class="ms_card d-flex flex-column align-items-center">
-                     <div class="symbol"><i class="fa-brands fa-google"></i></div>
-                     <h4>Google SEO</h4>
-                     <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                     <a href="#">Read More ></a>
-                  </div>
-               </div>
-
-             <div class="col">
-                  <div class="ms_card d-flex flex-column align-items-center">
-                     <div class="symbol"><i class="fa-solid fa-gear"></i></div>
-                     <h4>Brand Strategy</h4>
-                     <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                     <a href="#">Read More ></a>
-                  </div>
-               </div>
-
-               <div class="col">
-                  <div class="ms_card d-flex flex-column align-items-center">
-                     <div class="symbol"><i class="fa-solid fa-building"></i></div>
-                     <h4>Local SEO</h4>
-                     <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                     <a href="#">Read More ></a>
-                  </div>
-               </div>
-
-                <div class="col">
-                  <div class="ms_card d-flex flex-column align-items-center">
-                     <div class="symbol"><i class="fa-solid fa-chart-column"></i></div>
-                     <h4>Seo Analysis</h4>
+                     <div class="symbol"><i :class="`${cardItem.icon}`"></i></div>
+                     <h4>{{cardItem.title}}</h4>
                      <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
                      <a href="#">Read More ></a>
                   </div>
@@ -51,24 +24,57 @@
 </template>
 
 <script>
+
 export default {
-       name: 'OurServices',
+      name: 'OurServices',
+      data(){
+         return{
+
+            cardItems: [
+               {
+                  icon: 'fa-brands fa-google',
+                  title: 'Google SEO',
+                  content: 'exercitationem obcaecati officia quos officiis sequetur aria vel excepturi, facilis nihil numquam et!',
+                  callToAction: 'Read More >'
+               },
+               {
+                  icon: 'fa-solid fa-building',
+                  title: 'Brand Strategy',
+                  content: 'Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!',
+                  callToAction: 'Read More >'
+               },
+               {
+                  icon: 'fa-solid fa-building',
+                  title: 'Local SEO',
+                  content: 'officia quos officiis vel Nesciunt magnam exercitationem obcaecati excepturi, facilis nihil numquam et!',
+                  callToAction: 'Read More >'
+               },
+                   {
+                  icon: 'fa-solid fa-chart-column',
+                  title: 'Get Results',
+                  content: 'officia quos officiis vel Nesciunt magnam exercitationem obcaecati excepturi, facilis nihil numquam et!',
+                  callToAction: 'Read More >'
+               },
+            ],
+        };
+   }
 
 }
 
 </script>
 
 <style lang="scss" scoped>
+ @import '../assets/scss/vars.scss';
 
 #our-services{
       background-image: url(../assets/img/pattern_background.png);
-      background-color: blue;
+      background-color: $bg-secondary-color;
       background-size: cover;
       background-repeat: no-repeat;
       background-position-x: 50%;
       background-position-y: 50%;
       min-width: 800px;
-      color: white;
+      color: $text-second;
 }
 
 .ms_container{
@@ -76,10 +82,14 @@ export default {
   
   .main_title{
    margin-bottom: 80px;
+       
+       p{
+          color: $text-second;
+       }
   }
 
 .ms_card{
-    background-color: grey;
+    background-color: $card-color;
 
       .symbol{
          padding-top: 2rem;
@@ -96,7 +106,7 @@ export default {
 
       a{
         padding-bottom: 2rem;
-        color: orange;
+        color: $text-special
       }
    }
 }

@@ -50,45 +50,49 @@ export default {
          ],
       };
     }
-    
 }
 
 </script>
 
 <style lang="scss" scoped>
+ @import '../assets/scss/vars.scss';
 
 #our-agency{
-   background-color: red;
-}
-.ms_container{
-  
-  .main_title{
-   margin-bottom: 80px;
-  }
-
-.ms_card{
-   background-color: beige;
-
-      .symbol{
-         padding-top: 2rem;
-      }
-
-      h4{
-         margin-top: 1.5rem;
-         margin-bottom: 1rem;
-      }
+   .ms_container{
+     
+     .main_title{
+      margin-bottom: 80px;
 
       p{
-         margin-bottom: 2rem;
+         color: $subtext-color;
       }
-
-   }
-
-    .desk-image{
-      width: 90%;
-      margin: 50px auto 0 auto;
      }
+   
+   .ms_card{
 
+      background-color: $text-second;
+   
+         .symbol{
+            padding-top: 2rem;
+         }
+   
+         h4{
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+         }
+   
+         p{
+            margin-bottom: 2rem;
+         }
+   
+      }
+   
+       .desk-image{
+         width: 90%;
+         margin: 50px auto 0 auto;
+        }
+   
+   }
 }
 
 </style>

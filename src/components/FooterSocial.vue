@@ -18,9 +18,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ @import '../assets/scss/vars.scss';
      .svg-inline--fa{
     height: 1.8em;
-    color: brown ;
+    color: $subtext-color;
     margin-right: 10px;
       }
   

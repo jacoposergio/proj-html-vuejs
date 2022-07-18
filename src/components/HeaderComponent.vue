@@ -83,11 +83,11 @@ export default {
             ],
         };
     }
-    
 }
 </script>
 
 <style lang="scss" scoped>
+ @import '../assets/scss/vars.scss';
 
 
 header{
@@ -97,7 +97,7 @@ header{
       background-position-x: 50%;
       background-position-y: 0;
       min-width: 1800px;
-       color: white;
+      color: $text-second;
 
   .top_header{
     padding-top: 40px;
@@ -143,7 +143,7 @@ header{
         }
 
         .ms_button.blue{
-          background-color: blue;
+          background-color: $text-blue;
         }
       }
 

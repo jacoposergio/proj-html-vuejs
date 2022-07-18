@@ -24,7 +24,8 @@ li{
 }
 
 body{
-    font-family: $main-font
+    font-family: $main-font;
+    background-color: $bg-main-color;
 }
 
 a{
@@ -66,10 +67,14 @@ dl, ol, ul {
     width: 40%;
 }
 
+.main_title p{
+    color: $subtext-color
+}
+
 .ms_button{
    display: inline-block;
    text-align: center;
-   background-color: orange;
+   background-color: $text-special;
    padding: 0.7rem 2rem;
    text-transform: uppercase;
    color: white;
@@ -85,16 +90,15 @@ dl, ol, ul {
 }
 
 .active-link{
-    color: orange;
+    color: $text-special;
 }
 
 .apply::after {
     font-size: 0.9rem;
     content: "Apply";
-    color: orange;
-    font-weight: bold;
+    color: $text-special;
     text-transform: uppercase;
-    border: 1px solid red;
+    border: 1px solid $text-special;
     border-radius: 5px;
     padding: 0.3rem 0.5rem;
     margin-left: 8px;
@@ -124,7 +128,7 @@ h5{
 
 .svg-inline--fa{
     height: 1.8em;
-    color: orange;
+    color: $text-special;
 }
 
 p{

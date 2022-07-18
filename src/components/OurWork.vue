@@ -8,39 +8,9 @@
         <div class="cards_container">
           <div class="row g-3 row-cols-3">
 
-                <div class="col">
+                 <div class="col" v-for="cardItem, index in cardItems" :key="index">
                   <div class="d-flex flex-column align-items-center">
-                     <img src="../assets/img/case-study-gallery-3-1-1200x900.jpg" alt="case study">
-                  </div>
-               </div>
-
-                   <div class="col">
-                  <div class="d-flex flex-column align-items-center">
-                     <img src="../assets/img/case-study-gallery-3-1-1200x900.jpg" alt="case study">
-                  </div>
-               </div>
-
-                   <div class="col">
-                  <div class="d-flex flex-column align-items-center">
-                     <img src="../assets/img/case-study-gallery-3-1-1200x900.jpg" alt="case study">
-                  </div>
-               </div>
-
-                   <div class="col">
-                  <div class="d-flex flex-column align-items-center">
-                     <img src="../assets/img/case-study-gallery-3-1-1200x900.jpg" alt="case study">
-                  </div>
-               </div>
-
-                   <div class="col">
-                  <div class="d-flex flex-column align-items-center">
-                     <img src="../assets/img/case-study-gallery-3-1-1200x900.jpg" alt="case study">
-                  </div>
-               </div>
-
-                   <div class="col">
-                  <div class="d-flex flex-column align-items-center">
-                     <img src="../assets/img/case-study-gallery-3-1-1200x900.jpg" alt="case study">
+                     <img :src="require(`../assets/img/${cardItem.img}.jpg`)" :alt="cardItem.title">
                   </div>
                </div>
 
@@ -56,7 +26,37 @@
 <script>
 export default {
       name: 'OurWork',
+        data(){
+      return{
 
+         cardItems: [
+            {
+             title: 'image of a desktop',
+             img: 'case-study-gallery-3-1-1200x900'
+           },
+            {
+             title: 'image of a pc monitor',
+             img: 'case-study-gallery-2-800x600'
+           },
+            {
+             title: 'image of a smartphone',
+             img: 'case-study-gallery-1-1-1200x900'
+           },
+            {
+             title: 'image of a graphic',
+             img: 'case-study-gallery-4-1-1200x900'
+           },
+            {
+             title: 'image of a graphic 2',
+             img: 'case-study-gallery-5-1-1200x900'
+           },
+            {
+             title: 'image of a graphic 3',
+             img: 'case-study-gallery-6-1-1200x900'
+           },
+         ],
+      };
+    }
 }
 
 </script>

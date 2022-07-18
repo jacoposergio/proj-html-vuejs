@@ -8,80 +8,25 @@
         <div class="cards_container">
           <div class="row g-4 row-cols-4">
 
-                <div class="col">
+                 <div class="col" v-for="cardItem, index in cardItems" :key="index">
                   <div class="ms_card d-flex flex-column align-items-center">
-                     <h5>Standard</h5>
+                     <h5>{{cardItem.offer}}</h5>
                      <div class="price_container d-flex">
                         <div class="dollar_symbol">$</div>
-                        <div class="main_number">19</div>
+                        <div class="main_number">{{cardItem.price}}</div>
                         <div class="cents_time d-flex flex-column justify-content-around">
                             <div class="cents">99</div>
                             <div class="time">monthly</div>
                         </div>
                      </div>
-                     <p>5 Projects</p>
-                     <p>5 GB storage</p>
+                     <p>{{cardItem.projects}} Projects</p>
+                     <p>{{cardItem.storage}} storage</p>
                      <p>Umlimited users</p>
-                     <div class="ms_button">
+                     <div :class="{'bg_orange': cardItem.isActive}" class="ms_button ">
                         <a href="#">Start today</a>
                      </div>
                   </div>
                </div>
-
-               <div class="col">
-                  <div class="ms_card d-flex flex-column align-items-center">
-                     <h5>Standard</h5>
-                     <div class="price_container d-flex">
-                        <div class="dollar_symbol">$</div>
-                        <div class="main_number">19</div>
-                        <div class="cents_time d-flex flex-column justify-content-around">
-                            <div class="cents">99</div>
-                            <div class="time">monthly</div>
-                        </div>
-                     </div>
-                     <p>5 Projects</p>
-                     <p>5 GB storage</p>
-                     <p>Umlimited users</p>
-                     <a href="#">Start today</a>
-                  </div>
-               </div>
-
-               <div class="col">
-                  <div class="ms_card d-flex flex-column align-items-center">
-                     <h5>Standard</h5>
-                     <div class="price_container d-flex">
-                        <div class="dollar_symbol">$</div>
-                        <div class="main_number">19</div>
-                        <div class="cents_time d-flex flex-column justify-content-around">
-                            <div class="cents">99</div>
-                            <div class="time">monthly</div>
-                        </div>
-                     </div>
-                     <p>5 Projects</p>
-                     <p>5 GB storage</p>
-                     <p>Umlimited users</p>
-                     <a href="#">Start today</a>
-                  </div>
-               </div>
-
-               <div class="col">
-                  <div class="ms_card d-flex flex-column align-items-center">
-                     <h5>Standard</h5>
-                     <div class="price_container d-flex">
-                        <div class="dollar_symbol">$</div>
-                        <div class="main_number">19</div>
-                        <div class="cents_time d-flex flex-column justify-content-around">
-                            <div class="cents">99</div>
-                            <div class="time">monthly</div>
-                        </div>
-                     </div>
-                     <p>5 Projects</p>
-                     <p>5 GB storage</p>
-                     <p>Umlimited users</p>
-                     <a href="#">Start today</a>
-                  </div>
-               </div>
-
 
           </div>
         </div>  
@@ -92,12 +37,48 @@
 <script>
 export default {
       name: 'OurPlans',
+      data(){
+         return{
+
+            cardItems: [
+               {
+                  offer: 'Standard',
+                  price: '19',
+                  projects: '5',
+                  storage: '5GB',
+                  isActive: false,
+               },
+                  {
+                  offer: 'Standard',
+                  price: '29',
+                  projects: '10',
+                  storage: '5GB',
+                  isActive: false,
+               },
+                  {
+                  offer: 'Standard',
+                  price: '39',
+                  projects: '5',
+                  storage: '15GB',
+                  isActive: true,
+               },
+                  {
+                  offer: 'Standard',
+                  price: '59',
+                  projects: 'Unlimited',
+                  storage: 'Unlimited',
+                  isActive: false,
+               },
+            ],
+        };
+   }
 
 }
 
 </script>
 
 <style lang="scss" scoped>
+ @import '../assets/scss/vars.scss';
 
 #our-plans{
       background-image: url(../assets/img/background1.jpg);
@@ -115,6 +96,10 @@ export default {
   .main_title{
    margin-top: 120px; 
    margin-bottom: 80px;
+
+      p{
+          color: $text-second;
+         }
   }
 
 .ms_card{
@@ -134,35 +119,39 @@ export default {
            .main_number{
                 font-size: 2.5rem;
                 font-weight: bolder;
-                color: blue
+                color: $text-deep-blue;
            }
 
            .cents_time{
 
                 .cents{
                      font-weight: bolder;
-                     color: blue
+                     color: $text-deep-blue;
                 }
 
                 .time{
                      font-size: 0.6rem;
                      font-style: oblique;
                 } 
-
            }
-
-          
         }  
 
            p{
             margin-bottom: 30px;
+            color: $subtext-color;
              }
 
           .ms_button{
-            padding: 0.6rem 1.6rem;
-            border: 1px solid black;
-            color: black;
+            padding: 0.6rem 1.3rem;
+            border: 1px solid $subtext-color;
+             color: $subtext-color;
             background-color: inherit;
+          }
+
+          .ms_button.bg_orange{
+            background-color: $text-special;
+            color: white;
+            border: 0px solid $subtext-color;
           }
    }
 }

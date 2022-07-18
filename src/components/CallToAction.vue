@@ -24,6 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ @import '../assets/scss/vars.scss';
 
 #call_to_action{
       background-image: url(../assets/img/CTA-seo-1.jpg);
@@ -32,7 +33,7 @@ export default {
       background-position-x: 50%;
       background-position-y: 50%;
       min-width: 800px;
-      color: white;
+      color: $text-second;
       position: relative;
       z-index: -2;
 
@@ -42,7 +43,7 @@ export default {
               height: 100%;
               top: 0;
               right: 0;
-              background-color: black;
+              background-color: $text-first;
               z-index: -1;
               opacity: 0.5;
 
@@ -54,6 +55,7 @@ export default {
 
                   p{
                      margin-top: 20px;
+                     color: $text-second;
                   }
             }
 
