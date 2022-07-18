@@ -5,63 +5,102 @@
         <img src="../assets/img/logo_seo_2x.png" alt="Seo logo">
       </div>
         <ul class="footer_links d-flex justify-content-between">
-          <li>
-            <a href="Home">home</a>
-          </li>
-           <li>
-            <a href="Who we are">ciao</a>
-          </li>
-           <li>
-             <a href="Who we are">bella</a>
-          </li>
-           <li>
-            <a href="Who we are">tori</a>
-          </li>
-           <li>
-             <a href="Who we are">rocce</a>
-          </li>
+          <FooterList 
+             v-for="navLink, index in navLinks" :key="index" :item="navLink"
+          />
         </ul>
          <ul class="site_info d-flex justify-content-center">
           <li>
-            CPyright |
+            &copy; Copyright 2012-2020
           </li>
            <li>
-            Avada team |
+            Avada theme by <span>ThemeFusion</span>
           </li>
            <li>
-           aiutos |
+           All Rights Reserved
           </li>
            <li>
-            link
-          </li>
-           <li>
-            link
+            Powered by <span>WordPress</span>
           </li>
         </ul>
          <ul class="social_links d-flex justify-content-center">
-          <li>
-            link
-          </li>
-           <li>
-            link
-          </li>
-           <li>
-            link
-          </li>
-           <li>
-            link
-          </li>
-           <li>
-            link
-          </li>
+           <FooterSocial
+              v-for="socialLink, index in socialLinks" :key="index" :symbol="socialLink"
+           />
         </ul>
     </div>
   </footer>
 </template>
 
 <script>
+import FooterList from './FooterList.vue'
+import FooterSocial from './FooterSocial.vue'
+
 export default {
      name: 'FooterComponent',
+     components: {
+           FooterList,
+           FooterSocial
+    },
+     data() {
+        return {
+            navLinks: [
+                {
+                    text: 'Home',
+                    url: '#',
+                    current: true,
+                },
+                {
+                    text: 'Who We Are',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'What We Do',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Where We Work',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'Carrers',
+                    url: '#',
+                    current: false,
+                },
+                {
+                    text: 'News',
+                    url: '#',
+                    current: false,
+                },
+                 {
+                    text: 'Get in Touch Now',
+                    url: '#',
+                    current: false,
+                },
+            ],
+            socialLinks: [
+                {
+                    name: 'facebook',
+                    url: '#',
+                },
+                {
+                    name: 'instagram',
+                    url: '#',
+                },
+                {
+                    name: 'twitter',
+                    url: '#',
+                }, 
+                     {
+                    name: 'youtube',
+                    url: '#',
+                }, 
+           ],
+        };
+    }
 
 }
 </script>
@@ -69,7 +108,7 @@ export default {
 <style lang="scss" scoped>
 
 .ms_container{
-    width: 50%;
+    width: 40%;
     .logo_container{
     
           img{
@@ -88,19 +127,30 @@ export default {
      }
 
    .site_info{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
        li{
         margin-right: 1rem;
+
+        span{
+          font-weight: 600;
+        }
+       }
+
+       li:after{
+        content: "|";
+        margin-left: 10px;
        }
 
     }
 
       .social_links{
         margin-bottom: 40px;
+        
           
           li{
           margin-right: 1rem;
+          font-size: 0.8rem;
           }
 
   }

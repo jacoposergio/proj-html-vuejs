@@ -8,26 +8,10 @@
         <div class="cards_container">
           <div class="row g-4 row-cols-3">
 
-                <div class="col">
+                <div class="col" v-for="cardItem, index in cardItems" :key="index">
                   <div class="ms_card d-flex flex-column align-items-center">
-                     <div class="symbol"><i class="fa-solid fa-road"></i></div>
-                     <h4>Estabilish Goals</h4>
-                     <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                  </div>
-               </div>
-
-             <div class="col">
-                  <div class="ms_card d-flex flex-column align-items-center">
-                     <div class="symbol"><i class="fa-solid fa-video"></i></div>
-                     <h4>Estabilish Goals</h4>
-                     <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                  </div>
-               </div>
-
-               <div class="col">
-                  <div class="ms_card d-flex flex-column align-items-center">
-                     <div class="symbol"><i class="fa-solid fa-droplet"></i></div>
-                     <h4>Estabilish Goals</h4>
+                     <div class="symbol"><i :class="`fa-solid ${cardItem.icon}`"></i></div>
+                     <h4>{{cardItem.title}}</h4>
                      <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
                   </div>
                </div>
@@ -44,6 +28,28 @@
 <script>
 export default {
     name: 'OurAgency',
+    data(){
+      return{
+
+         cardItems: [
+            {
+              icon: 'fa-road',
+              title: 'Estabilish Goals',
+              content: 'exercitationem obcaecati officia quos officiis sequetur aria vel excepturi, facilis nihil numquam et!'
+           },
+            {
+              icon: 'fa-video',
+              title: 'Work with a team',
+              content: 'Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!'
+           },
+            {
+              icon: 'fa-droplet',
+              title: 'Get Results',
+              content: 'officia quos officiis vel Nesciunt magnam exercitationem obcaecati excepturi, facilis nihil numquam et!'
+           },
+         ],
+      };
+    }
     
 }
 
