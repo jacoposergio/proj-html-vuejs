@@ -43,8 +43,8 @@
 
           </div>
         </div>
-         <div class="ms_bottom">
-           <a href="">See our work</a>
+         <div class="ms_button">
+           <a href="">go to news</a>
         </div>  
      </div>
    </section>
@@ -60,37 +60,41 @@ export default {
 
 <style lang="scss" scoped>
 
-.main_title{
-   margin-bottom: 80px;
-  }
-
-.ms_card{
-   background-color: beige;
-   padding: 0;
-
-      h4{
-         margin-top: 1.5rem;
-         margin-bottom: 0.3rem;
-         color: orange;
+.ms_container{
+   text-align: center;
+   
+      .main_title{
+         margin-bottom: 80px;
       }
-
-      .ms_subtitle{
-        font-size: 0.9rem ;
-        margin-bottom: 0.5rem;
-
-
-      }
-
-      p{
-         margin-bottom: 2rem;
-      }
-
-   }
-
-  .ms_bottom{
-    margin: 50px 0;
-    text-align: center;
-  }  
+      
+      .ms_card{
+         background-color: beige;
+         padding: 0;
+      
+            h4{
+               margin-top: 1.5rem;
+               margin-bottom: 0.3rem;
+               color: orange;
+            }
+      
+            .ms_subtitle{
+            font-size: 0.9rem ;
+            margin-bottom: 0.5rem;
+      
+      
+            }
+      
+            p{
+               margin-bottom: 2rem;
+            }
+      
+         }
+      
+      .ms_button{
+         margin: 50px 0;
+         text-align: center;
+      }  
+}
 
 
 </style>

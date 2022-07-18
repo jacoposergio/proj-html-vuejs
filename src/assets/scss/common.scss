@@ -50,7 +50,7 @@ dl, ol, ul {
 // COMMONS
 
 .ms_container {
-    width: 65%;
+    width: 60%;
     margin: 0 auto;
     min-width: 800px;
     position: relative;
@@ -61,6 +61,19 @@ dl, ol, ul {
     text-align: center;
     width: 40%;
 }
+
+.ms_button{
+   display: inline-block;
+   text-align: center;
+   background-color: orange;
+   padding: 0.7rem 2rem;
+   text-transform: uppercase;
+   color: white;
+   border-radius: 20px;
+   font-weight: 900;
+   font-size: 0.8rem;
+ }
+
 
 .ms_card{
     padding: 0.5rem 2rem;
@@ -84,7 +97,7 @@ h4{
 
 h5{
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .svg-inline--fa{

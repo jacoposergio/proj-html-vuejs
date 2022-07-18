@@ -46,8 +46,8 @@
 
           </div>
         </div> 
-        <div class="ms_bottom">
-          <a href="">See our work</a>
+        <div class="ms_button">
+          <a href="">view our work</a>
         </div>
      </div>
    </section>
@@ -64,14 +64,14 @@ export default {
 <style lang="scss" scoped>
 
 .ms_container{
+   text-align: center;
   
   .main_title{
    margin-bottom: 80px;
   }
 
-  .ms_bottom{
-    margin: 50px 0;
-    text-align: center;
+  .ms_button{
+     margin: 80px 0 100px 0;
   }
 
 }

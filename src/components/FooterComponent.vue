@@ -69,6 +69,7 @@ export default {
 <style lang="scss" scoped>
 
 .ms_container{
+    width: 50%;
     .logo_container{
     
           img{
@@ -96,10 +97,11 @@ export default {
     }
 
       .social_links{
-
-      li{
-      margin-right: 1rem;
-      }
+        margin-bottom: 40px;
+          
+          li{
+          margin-right: 1rem;
+          }
 
   }
 }

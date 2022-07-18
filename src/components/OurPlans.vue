@@ -22,7 +22,9 @@
                      <p>5 Projects</p>
                      <p>5 GB storage</p>
                      <p>Umlimited users</p>
-                     <a href="#">Start today</a>
+                     <div class="ms_button">
+                        <a href="#">Start today</a>
+                     </div>
                   </div>
                </div>
 
@@ -102,7 +104,7 @@ export default {
       background-size: cover;
       background-repeat: no-repeat;
       background-position-x: 50%;
-      background-position-y: 50%;
+      background-position-y: 30%;
       min-width: 800px;
       color: white;
 }
@@ -111,12 +113,12 @@ export default {
   padding-bottom: 150px;
   
   .main_title{
-   margin-top: 100px; 
+   margin-top: 120px; 
    margin-bottom: 80px;
   }
 
 .ms_card{
-    padding: 25px 50px;
+    padding: 30px 50px;
     background-color: white;
     color: black;
 
@@ -153,16 +155,15 @@ export default {
         }  
 
            p{
-            margin-bottom: 25px;
+            margin-bottom: 30px;
              }
 
-          a{
-            margin-top: 5px;
-            border: 1px solid green;
-            padding: 7px 25px;
-            border-radius: 20px;
+          .ms_button{
+            padding: 0.6rem 1.6rem;
+            border: 1px solid black;
+            color: black;
+            background-color: inherit;
           }
-
    }
 }
 

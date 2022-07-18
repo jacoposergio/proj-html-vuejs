@@ -13,7 +13,7 @@
                      <div class="symbol"><i class="fa-brands fa-google"></i></div>
                      <h4>Google SEO</h4>
                      <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                     <a href="#">See more</a>
+                     <a href="#">Read More ></a>
                   </div>
                </div>
 
@@ -22,7 +22,7 @@
                      <div class="symbol"><i class="fa-solid fa-gear"></i></div>
                      <h4>Brand Strategy</h4>
                      <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                     <a href="#">See more</a>
+                     <a href="#">Read More ></a>
                   </div>
                </div>
 
@@ -31,7 +31,7 @@
                      <div class="symbol"><i class="fa-solid fa-building"></i></div>
                      <h4>Local SEO</h4>
                      <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                     <a href="#">See more</a>
+                     <a href="#">Read More ></a>
                   </div>
                </div>
 
@@ -40,7 +40,7 @@
                      <div class="symbol"><i class="fa-solid fa-chart-column"></i></div>
                      <h4>Seo Analysis</h4>
                      <p>Nesciunt magnam exercitationem obcaecati officia quos officiis vel excepturi, facilis nihil numquam et!</p>
-                     <a href="#">See more</a>
+                     <a href="#">Read More ></a>
                   </div>
                </div>
 
@@ -96,6 +96,7 @@ export default {
 
       a{
         padding-bottom: 2rem;
+        color: orange;
       }
    }
 }

@@ -34,11 +34,11 @@
             <div class="ms_jumbotron">
               <div class="row row-cols-2">
                 <div class="col">
-                  <h2>SEM Campaign made simple With Avada</h2>
+                  <h2>SEM Campaign Made simple With Avada</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sunt vero! Delectus est aspernatur magnam illum! </p>
                   <div class="buttons">
-                    <span>element sono un btn</span>
-                    <span>bella pevvoi</span>
+                    <span class="ms_button">buy avada now</span>
+                    <span class="ms_button blue">contact us</span>
                   </div>
                 </div>
               </div>
@@ -92,19 +92,29 @@ header{
   }
 
 .ms_jumbotron{
-
   padding: 240px 0;
 
-  p{
-    padding-right: 1.5rem;
-    text-align: start;
-  }
+      p{
+        margin: 20px 0 40px 0;
+        padding-right: 1.5rem;
+        text-align: start;
+      }
+     
+      .buttons{
+        .ms_button{
+
+          margin-right: 1.3rem;
+          letter-spacing: 2px;
+           padding: 0.8rem 2.3rem;
+           border-radius: 30px;
+        }
+
+        .ms_button.blue{
+          background-color: blue;
+        }
+      }
 
 }
-
-
-
-
 
 
 }
