@@ -63,7 +63,7 @@ header{
       background-size: cover;
       background-repeat: no-repeat;
       background-position-x: 50%;
-      background-position-y: 0%;
+      background-position-y: 0;
       min-width: 800px;
        color: white;
 
@@ -74,7 +74,7 @@ header{
 
             
             img{
-              width: 120px;
+              width: 130px;
             }
          }
 
@@ -84,6 +84,7 @@ header{
 
                 
                      li{
+                         font-size: 1.2rem;
                          margin-right: 30px;
                      } 
                  }
@@ -92,7 +93,7 @@ header{
 
 .ms_jumbotron{
 
-  padding: 210px 0;
+  padding: 240px 0;
 
   p{
     padding-right: 1.5rem;

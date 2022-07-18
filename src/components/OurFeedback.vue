@@ -100,7 +100,7 @@ export default {
     .logo-container{
      
       img{
-          width: 120px;
+          width: 100px;
           margin: 50px 0;
       }
 }
