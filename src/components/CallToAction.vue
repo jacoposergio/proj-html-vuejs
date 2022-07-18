@@ -5,8 +5,8 @@
         <div class="main_title">
            <h3>Start your free consultation</h3>
            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. molestias iure repellat neque.molestias iure repellat neque.</p>
-           <div class="ms_bottom">
-             <a href="">button</a>
+           <div class="ms_button">
+             <a href="">contact us now</a>
            </div>  
         </div>
        
@@ -51,6 +51,14 @@ export default {
               padding: 100px 0;
               z-index: 3;
                margin: 50px auto;
+
+                  p{
+                     margin-top: 20px;
+                  }
+            }
+
+            .ms_button{
+               margin-top: 15px;
             }
 
       
