@@ -1,34 +1,19 @@
 <template>
   <header>
         <div class="ms_container">
-            <div class="top_header d-flex justify-content-between">
+            <div class="top_header d-flex justify-content-between d-flex align-items-center">
                 <div class="logo">
                   <img src="../assets/img/logo_seo_w_2x.png" alt="logo" />
                 </div>
-                <nav>
+                <nav class="d-flex align-items-center">
                     <ul class="d-flex">
-                        <li>
-                            element
-                        </li>
-                        <li>
-                            element
-                        </li>
-                        <li>
-                              element
-                        </li>
-                        <li>
-                              element
-                        </li>
-                        <li>
-                            element
-                        </li>
-                        <li>
-                              element
-                        </li>
-                          <li>
-                              element
-                        </li>
+                       <NavList 
+                          v-for="navLink, index in navLinks" :key="index" :item="navLink"
+                       />
                     </ul>
+                    <div class="ms_button">
+                      <a href="#">get in touch now</a>
+                    </div>
                 </nav>
             </div>
             <div class="ms_jumbotron">
@@ -49,9 +34,56 @@
 </template>
 
 <script>
-export default {
-     name: 'HeaderComponent',
+import NavList from './NavList.vue'
 
+export default {
+    name: "HeaderComponent",
+    components: {
+      NavList
+    },
+      data() {
+        return {
+            navLinks: [
+                {
+                    text: 'Home',
+                    url: '#',
+                    current: true,
+                    apply: false
+                },
+                {
+                    text: 'Who We Are',
+                    url: '#',
+                    current: false,
+                    apply: false
+                },
+                {
+                    text: 'What We Do',
+                    url: '#',
+                    current: false,
+                    apply: false
+                },
+                {
+                    text: 'Where We Work',
+                    url: '#',
+                    current: false,
+                    apply: false
+                },
+                {
+                    text: 'Carrers',
+                    url: '#',
+                    current: false,
+                    apply: true
+                },
+                {
+                    text: 'News',
+                    url: '#',
+                    current: false,
+                    apply: false
+                },
+            ],
+        };
+    }
+    
 }
 </script>
 
@@ -64,32 +96,33 @@ header{
       background-repeat: no-repeat;
       background-position-x: 50%;
       background-position-y: 0;
-      min-width: 800px;
+      min-width: 1800px;
        color: white;
 
   .top_header{
     padding-top: 40px;
 
        .logo{
-
             
             img{
               width: 130px;
             }
          }
 
-          nav{
-              
-                ul{
-
-                
-                     li{
-                         font-size: 1.2rem;
-                         margin-right: 30px;
-                     } 
-                 }
+       nav{
+          
+            ul{
+                  li{
+                      font-size: 1.2rem;
+                      margin-right: 30px;
+                  } 
+              }
+            
+            .ms_button{
+              margin-left: 10px;
+            }
           }
-  }
+     }
 
 .ms_jumbotron{
   padding: 240px 0;
