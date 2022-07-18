@@ -32,6 +32,10 @@ a{
     text-decoration: none; 
   }
 
+a:hover{
+color: inherit;
+}  
+
 // BOOTSTRAP RESET
 
 ul{
@@ -50,7 +54,7 @@ dl, ol, ul {
 // COMMONS
 
 .ms_container {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     min-width: 800px;
     position: relative;
@@ -79,6 +83,23 @@ dl, ol, ul {
 .ms_card{
     padding: 0.5rem 2rem;
 }
+
+.active-link{
+    color: orange;
+}
+
+.apply::after {
+    font-size: 0.9rem;
+    content: "Apply";
+    color: orange;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+    margin-left: 8px;
+      }
+
 
 h2{
 
