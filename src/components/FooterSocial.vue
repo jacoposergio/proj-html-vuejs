@@ -7,22 +7,18 @@
 <script>
 export default {
       name: 'FooterSocial',
-
-         props: {
-      symbol: Object
-    }
-
-
-}
-
+    props: {
+        symbol: Object
+     }
+  }
 </script>
 
 <style lang="scss" scoped>
  @import '../assets/scss/vars.scss';
+
      .svg-inline--fa{
-    height: 1.8em;
-    color: $subtext-color;
-    margin-right: 10px;
-      }
-  
+            height: 1.8em;
+            color: $subtext-color;
+            margin-right: 10px;
+         }
 </style>

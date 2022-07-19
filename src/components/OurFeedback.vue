@@ -25,7 +25,6 @@
         
         </div>
       </div>
-
     </div>  
    </section>
 </template>
@@ -56,8 +55,7 @@ export default {
          ],
       };
     }
-
-}
+ }
 
 </script>
 
@@ -67,52 +65,47 @@ export default {
 #our-feedback{
    background-color: $text-second;
 
-  .ms_container.bottom_line{
-    border-bottom: 1px solid $thin-line;
+      .ms_container.bottom_line{
+        border-bottom: 1px solid $thin-line;
   
-  
-      .main_title{
-         padding-top: 100px;
-        .img_container{
-          margin: 2.5rem 0 2rem 0;
+              .main_title{
+                 padding-top: 100px;
+                    .img_container{
+                      margin: 2.5rem 0 2rem 0;
+                  
+                          img{
+                            border-radius: 50%;
+                            width: 130px;
+                          }
+                       }
       
-              img{
-                border-radius: 50%;
-                width: 130px;
-              }
-        }
-      
-        .dots{
-          padding-bottom: 50px;
-          
-              .circle{
-              display: block;
-              background-color: $text-first;
-              width: 12px;
-              height: 12px;
-              border-radius: 50%;
-              margin-top: 1.5rem;
-            }
-      
-            .circle.blank{
-              border: 1px solid $text-first;
-              background-color: $text-second;
-              margin-left: 5px;
-      
-            }
-        }
-            
-      }
-      }
+              .dots{
+                padding-bottom: 50px;
+                
+                    .circle{
+                        display: block;
+                        background-color: $text-first;
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        margin-top: 1.5rem;
+                      }
+              
+                    .circle.blank{
+                        border: 1px solid $text-first;
+                        background-color: $text-second;
+                        margin-left: 5px;
+                     }
+                  }
+             }
+         }
   
       .logo-container{
        
-        img{
-            width: 100px;
-            margin: 50px 0;
-        }
-  }
-}
-
-
+            img{
+                width: 100px;
+                margin: 50px 0;
+            }
+         }
+   }
 </style>

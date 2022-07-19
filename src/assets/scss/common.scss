@@ -1,10 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import '~@fontsource/source-sans-pro/index.css';
+@import '~@fontsource/source-sans-pro/200.css';
+@import '~@fontsource/source-sans-pro/300.css';
+@import '~@fontsource/source-sans-pro/400.css';
+@import '~@fontsource/source-sans-pro/600.css';
+@import '~@fontsource/source-sans-pro/700.css';
+@import '~@fontsource/source-sans-pro/900.css';
 
 @import './vars';
-
-
 
 // RESET
 
@@ -34,7 +38,7 @@ a{
   }
 
 a:hover{
-color: inherit;
+    color: inherit;
 }  
 
 // BOOTSTRAP RESET
@@ -68,22 +72,21 @@ dl, ol, ul {
 }
 
 .main_title p{
-    color: $subtext-color
+    color: $subtext-color;
 }
 
 .ms_button{
-   display: inline-block;
-   text-align: center;
-   background-color: $text-special;
-   padding: 0.7rem 2rem;
-   text-transform: uppercase;
-   color: white;
-   border-radius: 20px;
-   font-weight: 900;
-   font-size: 0.8rem;
-   letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+    background-color: $text-special;
+    padding: 0.7rem 2rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
  }
-
 
 .ms_card{
     padding: 0.5rem 2rem;
@@ -104,20 +107,18 @@ dl, ol, ul {
     margin-left: 8px;
       }
 
-
 h2{
-
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2.8rem;
 }
 
 h3{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2rem;
 }
 
 h4{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.4rem;
 }
 
@@ -134,4 +135,5 @@ h5{
 p{
     font-size: 1rem;
     text-align: center;
+    font-weight: 400;
 }

@@ -57,9 +57,8 @@ export default {
                },
             ],
         };
-   }
-
-}
+    }
+ }
 
 </script>
 
@@ -75,40 +74,39 @@ export default {
       background-position-y: 50%;
       min-width: 800px;
       color: $text-second;
-}
 
-.ms_container{
-  padding-bottom: 150px;
-  
-  .main_title{
-   margin-bottom: 80px;
-       
-       p{
-          color: $text-second;
-       }
-  }
+               .ms_container{
+               padding-bottom: 150px;
+               
+                     .main_title{
+                        margin-bottom: 80px;
+                           
+                           p{
+                              color: $text-second;
+                           }
+                     }
 
-.ms_card{
-    background-color: $card-color;
+                     .ms_card{
+                        background-color: $card-color;
 
-      .symbol{
-         padding-top: 2rem;
-      }
+                              .symbol{
+                                 padding-top: 2rem;
+                              }
 
-      h4{
-         margin-top: 1.5rem;
-         margin-bottom: 1rem;
-      }
+                              h4{
+                                 margin-top: 1.5rem;
+                                 margin-bottom: 1rem;
+                              }
 
-      p{
-         margin-bottom: 1rem;
-      }
+                              p{
+                                 margin-bottom: 1rem;
+                              }
 
-      a{
-        padding-bottom: 2rem;
-        color: $text-special
-      }
+                              a{
+                              padding-bottom: 2rem;
+                              color: $text-special
+                              }
+                        }
+               }
    }
-}
-
 </style>

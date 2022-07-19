@@ -7,7 +7,6 @@
     <OurNews/>
     <OurFeedback/>
     <CallToAction/>
-
   </main>
 </template>
 
@@ -31,11 +30,9 @@ export default {
           OurNews,
           OurFeedback,
           CallToAction
-  }
-
-}
+      }
+   }
 </script>
 
 <style lang="scss" scoped>
-
 </style>

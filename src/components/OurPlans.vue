@@ -27,7 +27,6 @@
                      </div>
                   </div>
                </div>
-
           </div>
         </div>  
      </div>
@@ -71,9 +70,8 @@ export default {
                },
             ],
         };
-   }
-
-}
+    }
+ }
 
 </script>
 
@@ -88,72 +86,75 @@ export default {
       background-position-y: 30%;
       min-width: 800px;
       color: white;
-}
 
-.ms_container{
-  padding-bottom: 150px;
-  
-  .main_title{
-   margin-top: 120px; 
-   margin-bottom: 80px;
 
-      p{
-          color: $text-second;
-         }
-  }
+         .ms_container{
+         padding-bottom: 150px;
+         
+               .main_title{
+               margin-top: 120px; 
+               margin-bottom: 80px;
 
-.ms_card{
-    padding: 30px 50px;
-    background-color: white;
-    color: black;
-
-     .price_container{
-        margin-bottom: 20px;
-        margin-top: 20px;
-           
-           .dollar_symbol{
-                padding-top: 7px;
-                font-weight: bolder;
-           }
-           
-           .main_number{
-                font-size: 2.5rem;
-                font-weight: bolder;
-                color: $text-deep-blue;
-           }
-
-           .cents_time{
-
-                .cents{
-                     font-weight: bolder;
-                     color: $text-deep-blue;
+                     p{
+                        color: $text-second;
+                      }
                 }
 
-                .time{
-                     font-size: 0.6rem;
-                     font-style: oblique;
-                } 
+               .ms_card{
+                  padding: 30px 50px;
+                  background-color: white;
+                  color: black;
+
+                     .price_container{
+                           margin-bottom: 20px;
+                           margin-top: 20px;
+            
+                              .dollar_symbol{
+                                    padding-top: 10px;
+                                    font-weight: bolder;
+                                    color: $subtext-color;
+                              }
+                  
+                              .main_number{
+                                    font-size: 2.5rem;
+                                    font-weight: bolder;
+                                    color: $text-deep-blue;
+                               }
+
+                              .cents_time{
+                                 padding: 10px 0;
+
+                                    .cents{
+                                          font-weight: bolder;
+                                          color: $text-deep-blue;
+                                       }
+
+                                    .time{
+                                          font-size: 0.6rem;
+                                          font-style: oblique;
+                                       } 
+                                 }
+                        }  
+
+                     p{
+                        margin-bottom: 30px;
+                        color: $subtext-color;
+                        }
+
+                     .ms_button{
+                        padding: 0.6rem 1.3rem;
+                        border: 1px solid $subtext-color;
+                        color: $subtext-color;
+                        background-color: inherit;
+                     }
+
+                     .ms_button.bg_orange{
+                        background-color: $text-special;
+                        color: white;
+                        border: 0px solid $subtext-color;
+                     }
+                  }
            }
-        }  
-
-           p{
-            margin-bottom: 30px;
-            color: $subtext-color;
-             }
-
-          .ms_button{
-            padding: 0.6rem 1.3rem;
-            border: 1px solid $subtext-color;
-             color: $subtext-color;
-            background-color: inherit;
-          }
-
-          .ms_button.bg_orange{
-            background-color: $text-special;
-            color: white;
-            border: 0px solid $subtext-color;
-          }
-   }
-}
+     }
 
 </style>

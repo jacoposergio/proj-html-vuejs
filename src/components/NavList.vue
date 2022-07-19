@@ -7,14 +7,11 @@
 <script>
 export default {
       name: 'NavList',
-
-    props: {
-    item: Object
-    }
-}
-
+      props: {
+         item: Object
+       }
+   }
 </script>
 
 <style>
-  
 </style>

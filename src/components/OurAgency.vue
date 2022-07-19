@@ -30,7 +30,7 @@ export default {
     name: 'OurAgency',
     data(){
       return{
-
+         
          cardItems: [
             {
               icon: 'fa-road',
@@ -50,7 +50,7 @@ export default {
          ],
       };
     }
-}
+  }
 
 </script>
 
@@ -60,39 +60,36 @@ export default {
 #our-agency{
    .ms_container{
      
-     .main_title{
-      margin-bottom: 80px;
+         .main_title{
+            margin-bottom: 80px;
 
-      p{
-         color: $subtext-color;
+               p{
+                  color: $subtext-color;
+               }
+            }
+         
+         .ms_card{
+            background-color: $text-second;
+         
+               .symbol{
+                  padding-top: 2rem;
+               }
+         
+               h4{
+                  margin-top: 1.5rem;
+                  margin-bottom: 1rem;
+               }
+         
+               p{
+                  margin-bottom: 2rem;
+               }
+         
+            }
+   
+         .desk-image{
+             width: 90%;
+             margin: 50px auto 0 auto;
+           }
       }
-     }
-   
-   .ms_card{
-
-      background-color: $text-second;
-   
-         .symbol{
-            padding-top: 2rem;
-         }
-   
-         h4{
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-         }
-   
-         p{
-            margin-bottom: 2rem;
-         }
-   
-      }
-   
-       .desk-image{
-         width: 90%;
-         margin: 50px auto 0 auto;
-        }
-   
-   }
-}
-
+  }
 </style>

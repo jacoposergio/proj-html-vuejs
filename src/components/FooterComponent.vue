@@ -1,34 +1,34 @@
 <template>
   <footer>
     <div class="ms_container d-flex flex-column align-items-center">
-      <div class="logo_container">
-        <img src="../assets/img/logo_seo_2x.png" alt="Seo logo">
-      </div>
-        <ul class="footer_links d-flex justify-content-between">
-          <FooterList 
-             v-for="navLink, index in navLinks" :key="index" :item="navLink"
-          />
-        </ul>
-         <ul class="site_info d-flex justify-content-center">
-          <li>
-            &copy; Copyright 2012-2020
-          </li>
-           <li>
-            Avada theme by <span>ThemeFusion</span>
-          </li>
-           <li>
-           All Rights Reserved
-          </li>
-           <li>
-            Powered by <span>WordPress</span>
-          </li>
-        </ul>
-         <ul class="social_links d-flex justify-content-center">
-           <FooterSocial
-              v-for="socialLink, index in socialLinks" :key="index" :symbol="socialLink"
-           />
-        </ul>
-    </div>
+        <div class="logo_container">
+          <img src="../assets/img/logo_seo_2x.png" alt="Seo logo">
+         </div>
+          <ul class="footer_links d-flex justify-content-between">
+              <FooterList 
+                v-for="navLink, index in navLinks" :key="index" :item="navLink"
+              />
+          </ul>
+          <ul class="site_info d-flex justify-content-center">
+              <li>
+                &copy; Copyright 2012-2020
+              </li>
+              <li>
+                Avada theme by <span>ThemeFusion</span>
+              </li>
+              <li>
+              All Rights Reserved
+              </li>
+              <li>
+                Powered by <span>WordPress</span>
+              </li> 
+          </ul>
+          <ul class="social_links d-flex justify-content-center">
+              <FooterSocial
+                v-for="socialLink, index in socialLinks" :key="index" :symbol="socialLink"
+              />
+          </ul>
+     </div>
   </footer>
 </template>
 
@@ -102,7 +102,7 @@ export default {
         };
     }
 
-}
+ }
 </script>
 
 <style lang="scss" scoped>
@@ -110,55 +110,52 @@ export default {
 
 .ms_container{
     width: 40%;
+
     .logo_container{
     
           img{
             width: 170px;
             margin: 80px 0 50px 0;
           }
-    }
+      }
 
     ul{
       width: 100%;
-    }
-
-       .footer_links{
-        margin-bottom: 50px ;  
-        color: $subtext-color;    
-
      }
+
+      .footer_links{
+      margin-bottom: 50px ;  
+      color: $subtext-color;    
+      }
 
    .site_info{
     margin-bottom: 40px;
 
-       li{
-        margin-right: 1rem;
-         color: $subtext-color; 
+          li{
+            margin-right: 1rem;
+            color: $subtext-color; 
 
-        span{
-          font-weight: 600;
-           color: $text-first
-        }
-       }
+                  span{
+                    font-weight: 600;
+                    color: $text-first
+                  }
+             }
 
-       li:after{
-        content: "|";
-        margin-left: 10px;
-       }
+          li:after{
+          content: "|";
+          margin-left: 10px;
+           }
+     }
 
-    }
-
-      .social_links{
-        margin-bottom: 40px;
-        color: $subtext-color;
-        
+    .social_links{
+      margin-bottom: 40px;
+      color: $subtext-color;
           
           li{
           margin-right: 1rem;
           font-size: 0.8rem;
           }
-
+     }
   }
-}
 
 </style>

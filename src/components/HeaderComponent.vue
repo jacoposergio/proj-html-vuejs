@@ -39,8 +39,8 @@ import NavList from './NavList.vue'
 export default {
     name: "HeaderComponent",
     components: {
-      NavList
-    },
+          NavList
+      },
       data() {
         return {
             navLinks: [
@@ -80,10 +80,10 @@ export default {
                     current: false,
                     apply: false
                 },
-            ],
-        };
+             ],
+         };
+       }
     }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -96,62 +96,57 @@ header{
       background-repeat: no-repeat;
       background-position-x: 50%;
       background-position-y: 0;
-      min-width: 1800px;
+      min-width: 1500px;
       color: $text-second;
+      margin-right: -12px;
 
-  .top_header{
-    padding-top: 40px;
+          .top_header{
+            padding-top: 40px;
 
-       .logo{
-            
-            img{
-              width: 130px;
-            }
-         }
+                .logo{
+                    
+                    img{
+                      width: 130px;
+                    }
+                  }
 
-       nav{
-          
-            ul{
-                  li{
-                      font-size: 1.2rem;
-                      margin-right: 30px;
-                  } 
+                nav{
+                  
+                    ul{
+                        li{
+                          font-size: 1.2rem;
+                          margin-right: 30px;
+                        } 
+                      }
+                    
+                    .ms_button{
+                      margin-left: 10px;
+                    }
+                 }
               }
-            
-            .ms_button{
-              margin-left: 10px;
-            }
-          }
+
+          .ms_jumbotron{
+          padding: 240px 0;
+
+                p{
+                  margin: 20px 0 40px 0;
+                  padding-right: 1.5rem;
+                  text-align: start;
+                }
+              
+                .buttons{
+                    .ms_button{
+
+                        margin-right: 1.3rem;
+                        letter-spacing: 2px;
+                        padding: 0.8rem 2.3rem;
+                        border-radius: 30px;
+                    }
+
+                    .ms_button.blue{
+                      background-color: $text-blue;
+                    }
+                  }
+              }
      }
-
-.ms_jumbotron{
-  padding: 240px 0;
-
-      p{
-        margin: 20px 0 40px 0;
-        padding-right: 1.5rem;
-        text-align: start;
-      }
-     
-      .buttons{
-        .ms_button{
-
-          margin-right: 1.3rem;
-          letter-spacing: 2px;
-           padding: 0.8rem 2.3rem;
-           border-radius: 30px;
-        }
-
-        .ms_button.blue{
-          background-color: $text-blue;
-        }
-      }
-
-}
-
-
-}
-
-
-
 </style>

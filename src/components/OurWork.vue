@@ -57,23 +57,20 @@ export default {
          ],
       };
     }
-}
-
+ }
 </script>
 
 <style lang="scss" scoped>
 
 .ms_container{
    text-align: center;
-  
-  .main_title{
-   margin-bottom: 80px;
+        
+        .main_title{
+        margin-bottom: 80px;
+        }
+
+        .ms_button{
+          margin: 80px 0 100px 0;
+        }
   }
-
-  .ms_button{
-     margin: 80px 0 100px 0;
-  }
-
-}
-
 </style>

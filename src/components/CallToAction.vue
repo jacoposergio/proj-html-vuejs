@@ -9,18 +9,14 @@
              <a href="">contact us now</a>
            </div>  
         </div>
-       
-      
       </div>
    </section>
 </template>
 
 <script>
 export default {
-      name: 'CallToAction',
-
-}
-
+   name: 'CallToAction',
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -46,8 +42,8 @@ export default {
               background-color: $text-first;
               z-index: -1;
               opacity: 0.5;
-
-             }
+              }
+              
             .main_title{
               padding: 100px 0;
               z-index: 3;
@@ -56,14 +52,12 @@ export default {
                   p{
                      margin-top: 20px;
                      color: $text-second;
+                   }
+
+                  .ms_button{
+                     margin-top: 15px;
                   }
-            }
-
-            .ms_button{
-               margin-top: 15px;
-            }
-
-      
-}
+             }
+      }
 
 </style>
