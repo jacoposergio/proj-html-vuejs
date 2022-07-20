@@ -98,7 +98,6 @@ header{
       background-position-y: 0;
       min-width: 1500px;
       color: $text-second;
-      margin-right: -12px;
 
           .top_header{
             padding-top: 40px;

@@ -56,6 +56,10 @@ dl, ol, ul {
     height: 2em;
 }
 
+.row{
+    --bs-gutter-x: 0;
+}
+
 // COMMONS
 
 .ms_container {
